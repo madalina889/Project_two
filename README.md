@@ -117,6 +117,15 @@ A **classification report** was generated using the **Logistic Regression** mode
    macro avg       0.74      0.74      0.74    436668
 weighted avg       0.74      0.74      0.74    436668
 ```
+
+## Applying the Pipeline
+
+After creating the data pipeline, I applied it to the dataset and used different models to evaluate their performance.
+
+- **Oversampling**: We balanced the classes using **RandomOverSampler** to address the class imbalance.
+- **Train-Test Split**: The dataset was split into training and testing sets for model evaluation.
+- **Model Evaluation**: I evaluated different models (**Logistic Regression**, **KNN**, **Random Forest**, **SVC**) using the pipeline and generated various evaluation metrics such as accuracy, confusion matrix, classification report, and balanced accuracy score.
+
 ##Conclusion 
 In this project, we explored the Diabetes Health Indicators Dataset and performed binary classification to predict diabetes status. We used several models (Logistic Regression, KNN, Random Forest, SVC) and evaluated their performance based on accuracy, precision, recall, and F1-score. After dealing with class imbalance via oversampling, we obtained reasonable performance scores, with the Random Forest model performing the best in terms of training and testing accuracy.
 
